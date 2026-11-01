@@ -1,0 +1,19 @@
+# Builds the editor on every push; the Makefile treats every warning as an error.
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build (-Wall -Wextra -Werror -pedantic)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build
+        run: make

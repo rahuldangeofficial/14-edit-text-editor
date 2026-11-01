@@ -1,5 +1,7 @@
 # edit v2.0.2 by @rahuldangeofficial
 
+[![build](https://img.shields.io/github/actions/workflow/status/rahuldangeofficial/14-edit-text-editor/ci.yml?branch=main&style=flat-square&label=build)](https://github.com/rahuldangeofficial/14-edit-text-editor/actions/workflows/ci.yml)
+
 A minimalist terminal text editor. Zero-config, UTF-8 native, atomically safe.
 
 ---
